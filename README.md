@@ -18,9 +18,12 @@
  - http://vadrevu-stackflownover.herokuapp.com/webapi/getData/{id} -- To get details of specific vehicle in database (GET).
  - http://vadrevu-stackflownover.herokuapp.com/webapi/getData/query? -- For filtering results with make,model and year as parameter names (GET).
  - http://vadrevu-stackflownover.herokuapp.com/webapi/getData/{id} -- To DELETE details of specific vehicle in database. 
- - Request format for PUT and POST requests - {"id": "-value-","make": "-value-","year": "-value-","model": "-value-"}
- - response format for PUT and POST requests {"status":"status of request"}
- - reponse format for GET requests {"status":"status of request","results":[{"id": "-value-","make": "-value-","year": "-value-","model": "-value-"},...]}
+ - Request format for PUT and POST requests - 
+   - **{"id": "-value-","make": "-value-","year": "-value-","model": "-value-"}**
+ - response format for PUT and POST requests 
+   - **{"status":"status of request"}**
+ - reponse format for GET requests 
+   - **{"status":"status of request","results":[{"id": "-value-","make": "-value-","year": "-value-","model": "-value-"},..]}**
  
 ### Code Links
 
