@@ -1,8 +1,98 @@
 <html>
-<body>
-    <h2>Jersey RESTful Web Application!</h2>
-    <p><a href="webapi/myresource">Jersey resource</a>
-    <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
-    for more information on Jersey!
-</body>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Mitchell International</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="custom.js"></script>
+ </head>
+ <body>
+ <div class="container">
+  <div class="jumbotron">
+    <h1>Mitchell International</h1> 
+    <p>Vehicle Database with Read, Create, Update and Delete operations.</p> 
+  </div>
+<div class="row">
+<div class="col-md-6">
+<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Update Vehicle</strong>
+                            </div>
+</div>
+<div class="form-group">
+  <label for="year">Year:</label>
+  <input type="text" class="form-control" id="year">
+</div>
+<div class="form-group">
+  <label for="make">Make:</label>
+  <input type="text" class="form-control" id="make">
+</div>
+<div class="form-group">
+  <label for="model">Model:</label>
+  <input type="text" class="form-control" id="model">
+</div>
+ <button type="submit" id="submitUpdates" onclick="validateUpdate()" class="btn btn-default">Submit</button> <button style="margin-left:10px" type="submit" id="submitDelete" onclick="validateDelete()" class="btn btn-danger">Delete</button>
+  <div>
+</div>
+</div>
+<div class="col-md-6">
+
+<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>List of Vehicles</strong>
+                            </div>
+</div>
+
+<form class="form-inline">
+<div class="form-group">
+  <input type="text" placeholder="Year" style="width:80px; margin-right:10px" class="form-control" id="yearFil">
+</div>
+<div class="form-group">
+  <input type="text" placeholder="Model" style="width:200px; margin-right:10px" class="form-control" id="modelFil">
+</div>
+<div class="form-group">
+  <input type="text" placeholder="Make" style="width:190px; margin-right:10px" class="form-control" id="makeFil">
+</div>
+<div class="form-group">
+                    <button class="btn btn-default" id="fil" onclick="filter()" type="button"><span class="glyphicon glyphicon-search"></span></button>
+ </div>               
+</form>
+
+<div  style= " max-height: 206px;overflow-y:scroll;" id="list" class="list-group">
+  
+</div>
+</div>
+</div>
+<div style="margin-top:20px; margin-bottom:20px" class="row">
+<div class="col-md-6">
+<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Insert Vehicle</strong>
+                            </div>
+</div>
+<div class="form-group">
+  <label for="yearIns">Year:</label>
+  <input type="text" class="form-control" id="yearIns">
+</div>
+<div class="form-group">
+  <label for="makeIns">Make:</label>
+  <input type="text" class="form-control" id="makeIns">
+</div>
+<div class="form-group">
+  <label for="modelIns">Model:</label>
+  <input type="text" class="form-control" id="modelIns">
+</div>
+ <button type="submit" id="submitInsert" onclick="validateInsertion()" class="btn btn-default">Submit</button> 
+  <div>
+</div>
+</div>
+ </body>
 </html>
