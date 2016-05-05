@@ -5,7 +5,7 @@
 
  - Developed web services in java using Jersey library (JAX-RS).
  - Used Google Cloud SQL as backend Database.
- - Deployed application on Heroku Platform (URL: http://vadrevu-stackflownover.herokuapp.com/).
+ - Deployed application on Heroku Platform (URL: https://vadrevu-stackflownover.herokuapp.com/).
  - Used Junit for automated testing of webservice.
  - Used Junit and Selenium WebDriver for testing the UI of the application.
  - Used Jquery on the client side for AJAX requests to the web services.
