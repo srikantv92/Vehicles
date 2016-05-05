@@ -247,7 +247,7 @@ function filtered(){
 	var modelFil = document.getElementById('modelFil').value;
 	var makeFil =  document.getElementById('makeFil').value;
 	var yearFil =  document.getElementById('yearFil').value;
-	var ur = 'webapi/getData/query?';
+	var ur = 'http://localhost:8080/Vehicles/webapi/getData/query?';
 	var i=0;
 	if(yearFil.length>0){
 		ur=ur+"year="+yearFil;
